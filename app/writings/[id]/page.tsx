@@ -68,7 +68,7 @@ export default async function WritingPage({ params }: WritingPageProps) {
                     <User className="h-5 w-5" />
                     <span>{writing.author.name}</span>
                   </div>
-                  <cspan className="text-gray-400">•</cspan>
+                  <span className="text-gray-400">•</span>
                   <span>Published {new Date(writing.createdAt).toLocaleDateString()}</span>
                 </div>
 

@@ -72,7 +72,7 @@ export default function NewForumPost() {
             </div>
 
             <form onSubmit={handleSubmit} className="p-8 space-y-6">
-              <!-- Title -->
+              {/* Title */}
               <div>
                 <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-2">
                   Title *</label>
@@ -89,7 +89,7 @@ export default function NewForumPost() {
                 )}
               </div>
 
-              <!-- Category -->
+              {/* Category */}
               <div>
                 <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-2">
                   Category *</label>
@@ -109,7 +109,7 @@ export default function NewForumPost() {
                 )}
               </div>
 
-              <!-- Content -->
+              {/* Content */}
               <div>
                 <label htmlFor="content" className="block text-sm font-medium text-gray-700 mb-2">
                   Content *</label>
@@ -126,7 +126,7 @@ export default function NewForumPost() {
                 )}
               </div>
 
-              <!-- Tags -->
+              {/* Tags */}
               <div>
                 <label htmlFor="tags" className="block text-sm font-medium text-gray-700 mb-2">
                   Tags (optional)</label>
@@ -142,7 +142,7 @@ export default function NewForumPost() {
                 </p>
               </div>
 
-              <!-- Submit Button -->
+              {/* Submit Button */}
               <div className="flex justify-end space-x-4">
                 <Link
                   href="/forum"

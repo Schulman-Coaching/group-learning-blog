@@ -4,7 +4,7 @@ import { BookOpen, Users, MessageSquare, Search, ArrowRight } from 'lucide-react
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <!-- Hero Section -->
+      {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- Features Section -->
+      {/* Features Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- About Louis Ormont Section -->
+      {/* About Louis Ormont Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      <!-- CTA Section -->
+      {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">

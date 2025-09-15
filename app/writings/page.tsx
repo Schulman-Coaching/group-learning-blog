@@ -1,5 +1,5 @@
 import prisma from '@/lib/prisma'
-import { BookOpen, Calendar, User, Filter, Search } from 'lucide-react'
+import { BookOpen, Calendar, User, Filter, Search, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 interface WritingWithAuthor {
