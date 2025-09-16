@@ -1,23 +1,6 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center py-6">
-            <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
-                <div className="h-8 w-8 text-white text-2xl">🧠</div>
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Group Learning Lab
-                </h1>
-                <p className="text-sm text-gray-600">Exploring group processes & learning</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
 
       <main>
         <section className="py-16 px-4 sm:px-6 lg:px-8">
