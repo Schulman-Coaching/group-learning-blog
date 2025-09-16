@@ -2,9 +2,19 @@ import prisma from '@/lib/prisma'
 import { notFound } from 'next/navigation'
 import { Users, Calendar, BookOpen, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import { WritingType } from '@prisma/client'
 
 interface AuthorPageProps {
   params: { id: string }
+}
+
+interface Writing {
+  id: string
+  title: string
+  excerpt: string | null
+  type: WritingType
+  year: number | null
+  tags: string | null
 }
 
 export default async function AuthorPage({ params }: AuthorPageProps) {
@@ -81,7 +91,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
 
               {author.writings.length > 0 ? (
                 <div className="space-y-6">
-                  {author.writings.map((writing) => (
+                  {author.writings.map((writing: Writing) => (
                     <article key={writing.id} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
                       <div className="flex items-center space-x-3 mb-4">
                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
